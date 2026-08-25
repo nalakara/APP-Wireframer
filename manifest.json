@@ -1,0 +1,21 @@
+{
+  "name": "App Wireframer",
+  "short_name": "Wireframer",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FDFCEC",
+  "theme_color": "#FDFCEC",
+  "description": "An application that helps non-programmers create professional-quality app specifications and AI prompts by guiding them through a 4-stage process.",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/vite.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

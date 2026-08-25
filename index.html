@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Wireframer</title>
+    
+    <!-- PWA & Mobile fullscreen meta tags -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#FDFCEC">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="App Wireframer">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Lato', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Bebas Neue', sans-serif;
+      }
+      /* Styles for rendered markdown */
+      .markdown-content h1, .markdown-content h2, .markdown-content h3 {
+        color: #00A99D; /* Turquoise */
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
+        letter-spacing: 0.05em;
+      }
+      .markdown-content h1 { font-size: 2.5rem; border-bottom: 2px solid #EAE3C9; padding-bottom: 0.5rem; }
+      .markdown-content h2 { font-size: 2rem; }
+      .markdown-content h3 { font-size: 1.5rem; }
+      .markdown-content p {
+        margin-bottom: 1rem;
+        line-height: 1.6;
+        color: #333333;
+      }
+      .markdown-content ul {
+        list-style-type: '✧ ';
+        padding-left: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      .markdown-content li {
+        margin-bottom: 0.5rem;
+        padding-left: 0.5rem;
+      }
+      .markdown-content strong {
+        color: #1a1a1a;
+        font-weight: 700;
+      }
+      .markdown-content pre {
+        background-color: #EAE3C9;
+        padding: 1rem;
+        border-radius: 8px;
+        overflow-x: auto;
+        margin-bottom: 1rem;
+        border: 1px solid #D1CBB8;
+      }
+      .markdown-content code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        background-color: #EAE3C9;
+        color: #F45D48; /* Orange-Red */
+        padding: 0.125rem 0.375rem;
+        border-radius: 4px;
+        font-size: 0.875rem;
+      }
+      .markdown-content pre code {
+        background-color: transparent;
+        color: #333333;
+        padding: 0;
+        border: none;
+      }
+      .markdown-content table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        margin-bottom: 1rem;
+        font-size: 0.875rem;
+        border: 1px solid #D1CBB8;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .markdown-content th, .markdown-content td {
+        border-bottom: 1px solid #D1CBB8;
+        padding: 0.75rem 1rem;
+        text-align: left;
+      }
+      .markdown-content td {
+         background-color: #FDFCEC;
+      }
+      .markdown-content th {
+        background-color: #EAE3C9;
+        font-weight: 700;
+        font-family: 'Lato', sans-serif;
+      }
+       .markdown-content tr:last-child td {
+        border-bottom: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.17.0",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "marked": "https://cdn.jsdelivr.net/npm/marked@12.0.2/lib/marked.esm.js"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-[#FDFCEC] text-[#333333]">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
