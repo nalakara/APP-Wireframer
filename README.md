@@ -2,6 +2,8 @@
 
 > **Ubah ide aplikasi abstrak menjadi dokumen spesifikasi teknis, wireframe interaktif, dan prompt AI siap pakai hanya dalam 4 langkah terstruktur.**
 
+🌐 **Live Demo**: https://app-wireframer.vercel.app
+
 ---
 
 ## 🌟 Tentang Proyek
@@ -134,3 +136,17 @@ graph LR
 
 ## 📄 Lisensi
 Didistribusikan di bawah Lisensi MIT. Bebas digunakan untuk keperluan komersial maupun pembelajaran.
+
+## Cara Menjalankan
+
+```bash
+npm install
+npm run dev
+```
+
+Buka `http://localhost:3000` (atau port yang tertera di terminal). Fitur AI membutuhkan `GEMINI_API_KEY` di environment server; tanpanya aplikasi tetap berjalan dengan fitur non-AI.
+---
+
+## License
+
+MIT License © 2026 Yudhan Sebastian
